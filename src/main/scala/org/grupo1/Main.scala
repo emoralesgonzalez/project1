@@ -5,7 +5,7 @@ import org.ejercicios._
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 object Main {
   def main(args: Array[String]): Unit= {
-    Ej3_2.e
+    Ej4.e
 
   }
 }
