@@ -1,13 +1,16 @@
 package org.ejercicios
 
-import org.compartida.Session
 import org.apache.spark.sql.functions._
+import org.compartida.Session
 
 object Mnm {
-  def e(s: Session){
+  def e{
+
+    val spark = Session.s()
+
     val mnmFile = "src/main/resources/mnm_dataset.csv"
 
-    val mnmDF = s.spark.read.format("csv")
+    val mnmDF = spark.read.format("csv")
       .option("header", "true")
       .option("inferSchema", "true")
       .load(mnmFile)
@@ -31,6 +34,6 @@ object Mnm {
 
     caCountMnMDF.show(10)
 
-    s.spark.stop()
+    spark.stop()
   }
 }

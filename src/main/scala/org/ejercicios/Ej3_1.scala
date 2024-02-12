@@ -7,7 +7,9 @@ import org.compartida.Session
 object Ej3_1 {
 
 
-    def e(s: Session) {
+    def e {
+
+      val spark = Session.s()
 
       val fireSchema = StructType(Array(StructField("CallNumber", IntegerType, true),
         StructField("UnitID", StringType, true),
@@ -39,7 +41,7 @@ object Ej3_1 {
         StructField("Delay", FloatType, true)))
 
       val sfFireFile = "src/main/resources/sf-fire-calls.csv"
-      val fireDF = s.spark.read.schema(fireSchema)
+      val fireDF = spark.read.schema(fireSchema)
         .option("header", "true")
         .csv(sfFireFile)
 

@@ -1,9 +1,13 @@
 package org.ejercicios
 
+
 import org.compartida.Session
 
 object Ej1 {
-  def e(s: Session) {
+  def e {
+
+    val spark = Session.s("local", "project1", "spark.some.config.option","some-value")
+
     val data = Seq(
       (1, "Hola"),
       (2, "Hola"),
@@ -11,7 +15,7 @@ object Ej1 {
     )
 
 
-    val df = s.spark.createDataFrame(data).toDF("ID", "info")
+    val df = spark.createDataFrame(data).toDF("ID", "info")
 
     df.show()
   }

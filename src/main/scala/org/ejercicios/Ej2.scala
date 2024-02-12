@@ -1,10 +1,11 @@
 package org.ejercicios
 
-import org.compartida.Session
 import org.apache.spark.sql.types._
+import org.compartida.Session
 
 object Ej2 {
- def e(s: Session) {
+ def e {
+   val spark = Session.s()
    val jsonFile = "src/main/resources/blogs.json"
 
    val schema = StructType(Array(StructField("Id", IntegerType, false),
@@ -16,7 +17,7 @@ object Ej2 {
      StructField("Campaigns", ArrayType(StringType), false)))
 
 
-   val blogsDF = s.spark.read.schema(schema).json(jsonFile)
+   val blogsDF = spark.read.schema(schema).json(jsonFile)
 
    blogsDF.show(false)
 
