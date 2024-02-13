@@ -1,11 +1,11 @@
 package org.grupo1
 
-import org.ejercicios._
+import org.ejercicios.chapter4._
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 object Main {
   def main(args: Array[String]): Unit= {
-    Ej4.e
+    Ej1.e
 
   }
 }
