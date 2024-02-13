@@ -2,7 +2,7 @@ package org.ejercicios.chapter4
 
 import org.compartida.Session
 
-object Ej1 {
+object Ej1_Flights {
   def e {
     val spark = Session.s()
 

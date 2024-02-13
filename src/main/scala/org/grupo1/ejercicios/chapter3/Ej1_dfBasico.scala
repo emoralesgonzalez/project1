@@ -2,7 +2,7 @@ package org.ejercicios.chapter3
 
 import org.compartida.Session
 
-object Ej1 {
+object Ej1_dfBasico {
   def e {
 
     val spark = Session.s("local", "project1", "spark.some.config.option","some-value")

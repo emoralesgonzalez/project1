@@ -3,7 +3,7 @@ package org.ejercicios.chapter3
 import org.apache.spark.sql.functions._
 import org.compartida.Session
 
-object Ej1_1 {
+object Ej1_1_dfBasico {
  def e: Unit = {
    val spark = Session.s()
    val dataDF = spark.createDataFrame(Seq(("Brooke", 20), ("Brooke", 25),

@@ -3,7 +3,7 @@ package org.ejercicios.chapter3
 import org.apache.spark.sql.types._
 import org.compartida.Session
 
-object Ej2 {
+object Ej2_JSONtoDF {
  def e {
    val spark = Session.s()
    val jsonFile = "src/main/resources/blogs.json"
