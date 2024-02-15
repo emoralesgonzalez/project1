@@ -44,6 +44,34 @@ object Ej1_Flights {
                  FROM us_delay_flights_tbl
                  ORDER BY origin, delay DESC""").show(10)
 
+    /*
+    spark.sql("CREATE DATABASE learn_spark_db")
+    spark.sql("USE learn_spark_db")
 
+    spark.sql("CREATE TABLE managed_us_delay_flights_tbl (date STRING, delay INT, distance INT, origin STRING, destination STRING)")
+
+    spark.sql("SELECT * FROM managed_us_delay_flights_tbl").show()
+
+    */
+
+
+    /*
+    spark.sql(s"""CREATE TABLE us_delay_flights_tbl(date STRING, delay INT, distance INT, origin STRING, destination STRING)
+             USING csv OPTIONS (PATH '$csvFile')""")
+
+    spark.sql("""CREATE OR REPLACE GLOBAL TEMP VIEW us_origin_airport_SFO_global_tmp_view AS
+             SELECT date, delay, origin, destination from us_delay_flights_tbl WHERE origin = 'SFO';""")
+
+    spark.sql("""CREATE OR REPLACE TEMP VIEW us_origin_airport_JFK_tmp_view AS
+             SELECT date, delay, origin, destination from us_delay_flights_tbl WHERE origin = 'JFK'""")
+
+    spark.sql("SELECT * FROM global_temp.us_origin_airport_SFO_global_tmp_view")
+
+    spark.sql("SELECT * FROM us_origin_airport_JFK_tmp_view").show()
+
+    spark.catalog.listDatabases()
+    spark.catalog.listTables()
+    spark.catalog.listColumns("us_delay_flights_tbl")
+    */
   }
 }
