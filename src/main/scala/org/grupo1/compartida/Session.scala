@@ -1,4 +1,4 @@
-package org.compartida
+package org.grupo1.compartida
 
 import org.apache.spark.sql.SparkSession
 

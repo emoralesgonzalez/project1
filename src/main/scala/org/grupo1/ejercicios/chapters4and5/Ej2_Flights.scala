@@ -1,9 +1,9 @@
-package org.ejercicios.chapter5
+package org.grupo1.ejercicios.chapters4and5
 
 import org.apache.spark.sql.functions._
-import org.compartida.Session
+import org.grupo1.compartida.Session
 
-object Ej1_Flights {
+object Ej2_Flights {
   def e {
 
     val spark = Session.s()

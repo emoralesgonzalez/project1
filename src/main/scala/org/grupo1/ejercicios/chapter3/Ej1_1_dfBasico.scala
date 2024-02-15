@@ -1,7 +1,7 @@
-package org.ejercicios.chapter3
+package org.grupo1.ejercicios.chapter3
 
 import org.apache.spark.sql.functions._
-import org.compartida.Session
+import org.grupo1.compartida.Session
 
 object Ej1_1_dfBasico {
  def e: Unit = {

@@ -1,4 +1,4 @@
-package org.ejercicios.chapter3
+package org.grupo1.ejercicios.chapter3
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._

@@ -1,8 +1,8 @@
 package org.grupo1.ejercicios.chapter3
 
-import org.compartida.Session
+import org.grupo1.compartida.Session
 import org.apache.spark.sql.types._
-import org.ejercicios.chapter3._
+
 
 import scala.io.StdIn
 

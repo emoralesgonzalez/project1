@@ -1,14 +1,20 @@
-package org.ejercicios.chapter3
+package org.grupo1.ejercicios.chapter3
 
 import org.apache.spark.sql.functions._
-import org.compartida.Session
-import org.datasets._
+import org.grupo1.compartida.Session
+import org.grupo1.datasets._
+import org.apache.spark.sql.Row
 
-object Ej4 {
+object Ej4_DS_CaseClass {
   def e {
     val spark = Session.s()
 
     import spark.implicits._
+
+    val row = Row(350, true, "Learning Spark 2E", null)
+    row.getInt(0)
+    row.getBoolean(1)
+    row.getString(2)
 
     val ds = spark.read
       .json("src/main/resources/iot_devices.json")

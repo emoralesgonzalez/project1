@@ -1,6 +1,6 @@
-package org.ejercicios.chapter4
+package org.grupo1.ejercicios.chapters4and5
 
-import org.compartida.Session
+import org.grupo1.compartida.Session
 
 object Ej1_Flights {
   def e {
