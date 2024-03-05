@@ -5,7 +5,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import org.grupo1.compartida.Session
 
-object Ej1 {
+object padron {
   def e {
 
     val spark = Session.s()
